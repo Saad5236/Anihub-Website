@@ -1,0 +1,195 @@
+
+
+
+/* -------GENERAL STYLING------ */
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    background-color: rgb(183, 208, 255);
+}
+
+
+
+/* -------LEFT NAV BAR------- */
+.leftNav{
+    width: 16%;
+    background-color:rgb(55, 85, 255);
+    border-right: 2px solid rgb(198, 218, 255);
+    
+}
+
+.leftNav ul{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftNav ul li{
+    text-align:center;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    transition: 0.5s;
+}
+
+.leftNav ul h3{
+    position: relative;
+    bottom: 4em;
+    color: rgb(3, 0, 167);
+    font-size: 1.3em;
+}
+
+.leftNav ul li a{
+    color: white;
+}
+
+.leftNav ul #click{
+    background-color: rgb(3, 0, 167);
+    border: 1px solid rgb(198, 218, 255);
+}
+
+.leftNav ul li:hover{
+    background-color: rgb(3, 0, 167);
+}
+
+/* -------TOP NAV BAR------- */
+.mainContent{
+    width: 84%;
+}
+header nav ul{
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 1%;
+}
+
+header nav ul li{
+    margin: 1.2% 1.5%;
+}
+
+header nav ul li a{
+    color: rgb(3, 0, 167);
+    padding-bottom: 2px;
+    transition: 0.2s;
+}
+
+header nav ul li a:hover{
+    border-bottom: 2px solid white;
+    color: rgb(19, 31, 19s);
+    padding: 0.3em 0.6em;
+    text-shadow: 0.5px 0.5px 2px black;
+}
+
+header nav ul li a:active{
+    border: 2px solid white;
+    color: rgb(19, 31, 19s);
+    border-radius: 0.7em;
+    padding: 0.3em 0.6em;
+}
+
+.clicked{
+    border: 2px solid white;
+    color: rgb(19, 31, 19s);
+    border-radius: 0.7em;
+    padding: 0.3em 0.6em;
+    text-shadow: 0.5px 0.5px 2px black;
+}
+
+
+
+/* -------MAIN HEADING------- */
+.mainHeading{
+    margin: 1.5em;
+    margin-left: 2%;
+    padding: 1% 0;
+    border-left: 3px solid rgb(3, 0, 167);
+}
+
+.mainHeading h1{
+    font-size: 3.7em;
+    color: white;
+    text-align: left;
+    margin: 0 2%;
+    padding: 1% 0;
+    text-shadow: 2px 2px 5px black;
+}
+
+.mainHeading h3{
+    margin: 0 2%;
+    padding: 1% 0;
+    font-style:oblique;
+    font-weight: 300;
+    text-transform: capitalize;
+    color: white;
+    letter-spacing: 2px;
+    border-top: 2px solid rgb(3, 0, 167);
+    width: 50%;
+    text-shadow: 1px 1px 5px black;
+}
+
+#underline{
+    margin: 3em 0;
+    border-bottom: 1.5px dashed white;
+}
+
+
+
+/* --------MAIN CONTENT------- */
+/* --------------------------- */
+section h2{
+    text-align:center;
+    font-size: 2.5em;
+    color: white;
+    border-bottom: 5px double rgb(3, 0, 167);
+    font-style: oblique;
+    text-shadow: 0 0 5px black;
+}
+
+/* ---------GALLERY-------- */
+
+.gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.imgCard{
+    margin-top: 1em;
+    border-radius: 1em;
+    padding: 1em;
+    background-color:rgb(55, 85, 255);
+    box-shadow: 2px 2px 6px 3px rgb(31, 31, 31);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.imgCard img{
+    width: 12em;
+    height: 16em;
+    transition: 0.3s;
+}
+
+.imgCard img:hover{
+    transform: scale(1.07, 1.07);
+    box-shadow: 0 2px 10px 3px rgb(31, 31, 31);
+    border-radius: 1em;
+}
+
+.imgCard .text{
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 0.6em;
+    border-top: 3px solid aliceblue;
+    color: white;
+}

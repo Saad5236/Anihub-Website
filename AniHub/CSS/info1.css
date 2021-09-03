@@ -1,0 +1,182 @@
+/* -------GENERAL STYLING------ */
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    background-color: rgb(183, 208, 255);
+}
+
+/* -------LEFT NAV BAR------- */
+.leftNav{
+    width: 16%;
+    background-color:rgb(55, 85, 255);
+    border-right: 2px solid rgb(198, 218, 255);
+    
+}
+
+.leftNav ul{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftNav ul li{
+    text-align:center;
+    color: white;
+    width: 100%;
+    padding: 1em 0;
+    transition: 0.5s;
+}
+
+.leftNav ul h3{
+    position: relative;
+    bottom: 4em;
+    color: rgb(3, 0, 167);
+    font-size: 1.3em;
+}
+
+.leftNav ul li a{
+    color: white;
+}
+
+.leftNav ul #click{
+    background-color: rgb(3, 0, 167);
+    border: 1px solid rgb(198, 218, 255);
+}
+
+.leftNav ul li:hover{
+    background-color: rgb(3, 0, 167);
+}
+
+
+/* -------HEADER-------- */
+.mainCont{
+    width: 86%;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 1em;
+    padding-bottom: 1.5em;
+    border-bottom: 3px solid rgb(3, 0, 167);
+}
+
+header .mainImg{
+    padding: 2% 4%;
+}
+header .mainImg img{
+    width: 18em;
+    height: 18em;
+    border-radius: 9.5em;
+    border: 3px solid rgb(55, 85, 255);
+    padding: 0.5em;
+}
+
+header .mainHeadText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 2% 6%;
+    width: 68%;
+    border-left: 3px solid rgb(3, 0, 167);
+
+}
+
+header .mainHeadText h1{
+    color: rgb(55, 85, 255);
+    text-shadow: 3px 3px 5px black;
+    font-size: 2.5em;
+    margin: 0.3em 0;
+}
+
+header .mainHeadText h3{
+    color: rgb(55, 85, 255);
+    text-shadow: 1px 1px 3px black;
+    letter-spacing: 0.1em;
+    text-transform: capitalize;
+    font-style:oblique;
+}
+
+
+
+/* -----------CHARACTER DETAILS' STYLING----------- */
+/* ------------------------------------------------- */
+.mainCont main h2{
+    margin: 0.8em;
+    padding: 0.3em;
+    color: rgb(55, 85, 255);
+    /* text-shadow: 2px 2px 5px black; */
+    display: inline-block;
+    border-bottom: 6px double rgb(3, 0, 167);
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.mainCont main .characterDetails{
+    display: flex;
+    justify-content: space-between;
+}
+/* ---------TABLE STYLING--------- */
+.mainCont main table{
+    border-collapse: collapse;
+    width: 300px;
+}
+
+.mainCont main table,.mainCont main .table th, .mainCont main .table td{
+    padding: 1em;
+}
+
+.mainCont main table .detailCell{
+    border-left: 2px solid rgb(3, 0, 167);
+    border-bottom: 2px solid rgb(3, 0, 167);
+}
+
+.mainCont main table .headCell{
+    border-bottom: 2px solid rgb(3, 0, 167);
+}
+
+.mainCont main table h3{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.mainCont main table tr .title{
+    font-size: 1em;
+}
+
+.mainCont main table tr .desc{
+    font-size: 0.9em;
+}
+
+
+
+/* --------PERSONALITY DESCRIPTION ARTICLE------- */
+.mainCont main .personalityDesc{
+    margin: 0 2em;
+}
+.mainCont main .personalityDesc h3{
+    text-align: center;
+    padding: 0.86em;   
+    border-bottom: 2px solid rgb(3, 0, 167);
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.mainCont main .personalityDesc p{
+    text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.9em;
+}
